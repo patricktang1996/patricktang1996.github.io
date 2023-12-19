@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root{
+    --main-color:rgb(0, 91, 0);
+    --black:black;
+    --white:white;
+    --light-black:rgb(113, 113, 113);
+    --light-white:rgb(227, 227, 227);
+    --dark-bg:rgba(0,0,0,0.7);
+    --light-bg:#eee;
+    --border:0.1rem solid var(--black);
+    --box-shadow:0 0.5rem 1rem rgba(0,0,0,0.1);
+    --text-shadow:0 1.5rem 3rem rgba(0,0,0,0.3);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border:none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html{
+    font-size: 65%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+    background-color: var(--white);
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+}
+
+.download {
+    margin-top: 2rem;
+    margin-bottom: -3rem;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 1rem;
+    font-size: 2rem;
+    background-color: var(--main-color);
+}
+
+#download {
+    color: #ffffff;
+}
+
+section {
+    padding: 5rem 10%;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+        transform:scale(0);
+    }
+}
+
+.heading{
+    background-size:cover !important;
+    background-position: center !important;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading h1{
+    font-size: 10rem;
+    text-transform: uppercase;
+    color: var(--white);
+    text-shadow: var(--text-shadow);
+}
+
+.heading p{
+    font-size: 4rem;
+    color: var(--white);
+    text-shadow: var(--text-shadow);
+}
+
+.btn{
+    display: inline-block;
+    background: rgb(0, 58, 0);
+    margin-top: 1rem;
+    color: var(--white);
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+}
+
+.heading-title{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    right:0;
+    z-index: 1000;
+    background-color: var(--white);
+    display: flex;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    box-shadow: var(--box-shadow);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .logo{
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.header .navigationBar a{
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+    color: var(--black);
+}
+
+.header .navigationBar a:hover{
+    color: var(--main-color);
+}
+
+#menu-btn{
+    font-size: 2rem;
+    cursor:pointer;
+    color: var(--black);
+    display: none;
+}
+.index{
+    padding: 0;
+}
+
+.index .slide{
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size:auto;
+    background-position: center;
+    min-height: 60rem;
+}
+
+.index .slide .content{
+    width: 85rem;
+}
+
+
+.index .slide .content span{
+    display:block;
+    font-size: 2.5rem;
+    color: var(--white);
+    padding-bottom: 1rem;
+    animation:fadeIn 0.4s linear backwards 0.2s;
+}
+
+.index .slide .content h3{
+    font-size: 6vw;
+    color: var(--white);
+    text-transform: uppercase;
+    line-height: 1;
+    text-shadow: var(--text-shadow);
+    padding: 1rem 0;
+    animation:fadeIn 0.4s linear backwards 0.4s;
+
+}
+
+.index .slide .content .btn{
+    animation:fadeIn 0.4s linear backwards 0.6s;
+}
+
+
+
+
+
+
+
+
+
+
+
+.skill .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+    gap: 3rem;
+}
+
+.skill .box-container .box{
+    padding: 3rem 2rem;
+    text-align: center;
+    background: var(--light-white);
+    cursor: pointer;
+}
+
+.skill .box-container .box:hover{
+    background:rgb(166, 180, 145);
+}
+
+.skill .box-container .box h3{
+    color:rgb(0, 43, 0);
+    font-size: 1.8rem;
+    padding-top: 1rem;
+}
+
+
+
+.projects .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    gap: 3rem;
+}
+
+.projects .box-container .box{
+    padding: 3rem 2rem;
+    text-align: center;
+    background: var(--light-white);
+}
+
+.projects .box-container .box:hover{
+    background:rgb(166, 180, 145);
+}
+
+.projects .box-container .box h3{
+    color:rgb(0, 43, 0);
+    font-size: 1.8rem;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.projects .box-container .box p{
+    color:rgb(0, 43, 0);
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.projects .box-container .box a{
+    background-color: var(--main-color);
+    color:var(--light-white);
+    font-size: 2rem;
+    margin: 1rem 140px;
+    padding: 1rem;
+    display: block;
+}
+
+.projects .box-container .box a i{
+    color: var(--white);
+    padding-right: 0.5rem;
+    transition: 0.2s linear;
+}
+
+.contact .form{
+    padding: 2rem;
+    background: var(--light-bg);
+}
+
+.contact h1{
+    font-size: 6rem;
+}
+
+.contact .form .flex{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+
+.contact .form .flex .inputBox input{
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    font-size: 1.6rem;
+    color: var(--light-black);
+    text-transform: none;
+    margin-top: 1.5rem;
+    border: var(--border);
+}
+
+.contact .form .flex .inputBox textarea{
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    font-size: 1.6rem;
+    color: var(--light-black);
+    text-transform: none;
+    margin-top: 1.5rem;
+    border: var(--border);
+}
+
+.contact .form .flex .inputBox input:focus{
+    background: var(--main-color);
+    color:var(--white);
+}
+
+.contact .form .flex .inputBox input:focus::placeholder{
+    color:var(--light-white);
+}
+
+.contact .form .flex .inputBox textarea:focus{
+    background: var(--main-color);
+    color:var(--white);
+}
+
+.contact .form .flex .inputBox textarea:focus::placeholder{
+    color:var(--light-white);
+}
+
+.contact .form .flex span{
+    font-size: 2rem;
+    color: var(--black);
+}
+
+
+
+
+
+
+
+
+.footer{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/bg1.jpg') no-repeat 0% 20%/ cover;
+    /* background-color: rgba(16, 18, 33, 0.824); */
+    /* background-size: cover; */
+    background-position: center;
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    gap: 3rem;
+}
+
+
+.footer .box-container .box h3{
+    color:var(--white);
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+.footer .box-container .box a{
+    color:var(--light-white);
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    display: block;
+}
+
+.footer .box-container .box a i{
+    color: var(--white);
+    padding-right: 0.5rem;
+    transition: 0.2s linear;
+}
+
+.footer .box-container .box a:hover i{
+    padding-right: 2rem;
+    color: var(--main-color);
+}
+
+.footer .credit{
+    text-align: center;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    border-top: 0.1rem solid var(--light-white);
+    font-size: 1.5rem;
+    color:var(--white);
+}
+
+.footer .credit span{ 
+    color: rgb(188, 224, 97);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1200px){
+
+    section{
+        padding: 3rem 5%;
+    }
+
+}
+
+@media (max-width:1000px){
+    html{
+        font-size: 60%;
+    }
+    section{
+        padding: 3rem 2rem;
+    }
+
+}
+
+
+@media (max-width:768px){
+    .contact h1{
+        font-size: 4rem;
+    }
+
+    .heading h1{
+        font-size: 6rem;
+    }
+    .heading p{
+        font-size: 3rem;
+    }
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .navigationBar{
+        position:absolute;
+        top:99%;
+        left:0;
+        right:0;
+        background-color: var(--white);
+        border-top: var(--border);
+        padding: 2rem;
+        transition: 0.3s linear;
+        clip-path: polygon(0 0,100% 0,100% 0,0 0);
+    }
+
+    .header .navigationBar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .header .navigationBar a{
+        display: block;
+        margin:2rem;
+        text-align: center;
+    }
+
+}
+
+@media (max-width:450px){
+    .contact h1{
+        font-size: 2.5rem;
+    }
+    .heading h1{
+        font-size: 4rem;
+    }
+
+    .heading p{
+        font-size: 2rem;
+    }
+
+    html{
+        font-size: 55%;
+    }
+    section{
+        padding: 3rem 2rem;
+    }
+
+    .heading-title{
+        font-size: 3rem;
+    }
+
+}
