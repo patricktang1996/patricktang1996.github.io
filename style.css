@@ -218,6 +218,34 @@ section {
 }
 
 
+.blog .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1800px));
+    gap: 3rem;
+}
+
+.blog .box-container .box{
+    padding: 3rem 2rem;
+    text-align: center;
+    background: var(--light-white);
+}
+
+.blog .box-container .box:hover{
+    background:rgb(166, 180, 145);
+}
+
+.blog .box-container .box h3{
+    color:rgb(0, 43, 0);
+    font-size: 1.8rem;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.blog .box-container .box p{
+    color:rgb(0, 43, 0);
+    font-size: 1.5rem;
+    padding: 1rem;
+}
 
 .projects .box-container{
     display: grid;
