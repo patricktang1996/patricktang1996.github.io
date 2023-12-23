@@ -13,7 +13,7 @@ body {
   margin: auto;
 }
 .full {
-  min-width: 350px;
+  min-width: 330px;
   background-color: rgb(245, 239, 231);
   margin: 0;
   display: grid;
@@ -95,7 +95,7 @@ img {
   top: 0;
   background-color: ghostwhite;
   margin: 0;
-  min-width: 400px;
+  min-width: 340px;
 }
 
 .line-1 {
@@ -107,7 +107,7 @@ img {
 @media screen and (max-width: 600px) {
 
   img {
-    width: 120px;
+    width: 130px;
   }
 
   p {
@@ -139,7 +139,7 @@ img {
 @media screen and (max-width: 450px) {
 
   img {
-    width: 90px;
+    width: 110px;
   }
 
   p {
@@ -165,5 +165,18 @@ img {
   h1{
     font-size: 1.8rem;
   }
-
+  .left {
+    position: initial;
+    background-color: rgb(3, 75, 4);
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right:10px;
+    color: white;
+  }
+  .right {
+    position: initial;
+    background-color: ghostwhite;
+    padding-left: 15px;
+    padding-right:10px;
+  }
 }

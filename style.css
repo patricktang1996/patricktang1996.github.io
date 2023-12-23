@@ -249,7 +249,7 @@ section {
 
 .projects .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
     gap: 3rem;
 }
 
@@ -286,7 +286,7 @@ section {
 }
 
 .projects .box-container .box img{
-    width: 300px;
+    width: 330px;
 }
 
 .projects .box-container .box a i{
@@ -443,6 +443,12 @@ section {
 
     .projects .box-container .box img{
         width: 220px;
+    }
+
+    .projects .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+        gap: 3rem;
     }
 
 }
