@@ -220,7 +220,7 @@ section {
 
 .blog .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(400px,1800px));
+    grid-template-columns: repeat(auto-fit,minmax(300px,1800px));
     gap: 3rem;
 }
 
@@ -249,7 +249,7 @@ section {
 
 .projects .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
     gap: 3rem;
 }
 
@@ -280,9 +280,13 @@ section {
     background-color: var(--main-color);
     color:var(--light-white);
     font-size: 2rem;
-    margin: 1rem 140px;
-    padding: 1rem;
+    margin: 1rem 100px;
+    padding: 0.5rem;
     display: block;
+}
+
+.projects .box-container .box img{
+    width: 300px;
 }
 
 .projects .box-container .box a i{
@@ -290,69 +294,6 @@ section {
     padding-right: 0.5rem;
     transition: 0.2s linear;
 }
-
-.contact .form{
-    padding: 2rem;
-    background: var(--light-bg);
-}
-
-.contact h1{
-    font-size: 6rem;
-}
-
-.contact .form .flex{
-    display: flex;
-    flex-direction: column;
-    gap:2rem;
-}
-
-.contact .form .flex .inputBox input{
-    width: 100%;
-    padding: 1.2rem 1.4rem;
-    font-size: 1.6rem;
-    color: var(--light-black);
-    text-transform: none;
-    margin-top: 1.5rem;
-    border: var(--border);
-}
-
-.contact .form .flex .inputBox textarea{
-    width: 100%;
-    padding: 1.2rem 1.4rem;
-    font-size: 1.6rem;
-    color: var(--light-black);
-    text-transform: none;
-    margin-top: 1.5rem;
-    border: var(--border);
-}
-
-.contact .form .flex .inputBox input:focus{
-    background: var(--main-color);
-    color:var(--white);
-}
-
-.contact .form .flex .inputBox input:focus::placeholder{
-    color:var(--light-white);
-}
-
-.contact .form .flex .inputBox textarea:focus{
-    background: var(--main-color);
-    color:var(--white);
-}
-
-.contact .form .flex .inputBox textarea:focus::placeholder{
-    color:var(--light-white);
-}
-
-.contact .form .flex span{
-    font-size: 2rem;
-    color: var(--black);
-}
-
-
-
-
-
 
 
 
@@ -498,6 +439,10 @@ section {
 
     .heading-title{
         font-size: 3rem;
+    }
+
+    .projects .box-container .box img{
+        width: 220px;
     }
 
 }

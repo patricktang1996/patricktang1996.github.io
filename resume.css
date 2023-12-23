@@ -13,7 +13,7 @@ body {
   margin: auto;
 }
 .full {
-  min-width: 400px;
+  min-width: 350px;
   background-color: rgb(245, 239, 231);
   margin: 0;
   display: grid;
@@ -136,4 +136,34 @@ img {
 
 }
 
+@media screen and (max-width: 450px) {
 
+  img {
+    width: 90px;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+  
+  li{
+    font-size: 1.2rem;
+  }
+  
+  h3{
+    font-size: 1.3rem;
+  }
+  
+  h2{
+    font-size: 1.6rem;
+  }
+
+  h4{
+    font-size: 1.3rem;
+  }
+  
+  h1{
+    font-size: 1.8rem;
+  }
+
+}
