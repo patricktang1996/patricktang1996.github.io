@@ -1,252 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Patricia</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="resume.css">
-</head>
-<body>
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="resume.css" />
+  </head>
+  <body>
     <section class="header">
       <a href="index.html" class="logo">Patricia</a>
       <nav class="navigationBar">
-          <a href="index.html">Home</a>
-          <a href="aboutPatricia.html">About Me</a>
-          <a href="projects.html">Projects</a>
-          <a href="blog.html">Blog</a>
+        <a href="index.html">Home</a>
+        <a href="aboutPatricia.html">About Me</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
       </nav>
 
       <div id="menu-btn" class="fas fa-bars"></div>
-    
     </section>
 
-
     <div class="download">
-      <h1 id="download" align="center"><a href="#" onclick="downloadCV()">Download CV</a></h1>
+      <h1 id="download" align="center">
+        <a href="#" onclick="downloadCV()">Download CV</a>
+      </h1>
     </div>
 
     <script>
       function downloadCV() {
-          var downloadLink = "resume_patriciatang.pdf";
-          var a = document.createElement('a');
-          a.href = downloadLink;
-          a.download = 'resume_patriciatang.pdf';
-          document.body.appendChild(a);
-          a.click();
-          document.body.removeChild(a);
+        var downloadLink = "resume_patriciatang.pdf";
+        var a = document.createElement("a");
+        a.href = downloadLink;
+        a.download = "resume_patriciatang.pdf";
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
       }
-  </script>
-  
-    
+    </script>
+
     <section class="resume">
-
-    <div id="heading">
+      <div id="heading">
         <div class="name">
-        <h1 align="center">TANG Jing, Patricia</h1>
-    </div>
-    <div class="title">
-         <p align="center">Software Developer, Cloud Engineer</p>
-    </div>
+          <h1 align="center">TANG Jing, Patricia</h1>
+        </div>
+        <div class="title">
+          <p align="center">Software Developer, Cloud Engineer</p>
+        </div>
         <div class="line-1"></div>
-    </div>
-    <div class="full">
-      <div class="left">
+      </div>
+      <div class="full">
+        <div class="left">
           <div class="image">
-              <img src= "images/patriciatang.png" alt="Patricia">
+            <img src="images/patriciatang.png" alt="Patricia" />
           </div>
-            <div class="Contact">
-                <h2>Contact</h2>
-                <p><b>Email: </b>tangjing1@myvuw.ac.nz</p>
-                <p id="linkedin"><b>LinkedIn: </b><a href="https://www.linkedin.com/in/jing-tang1996/">www.linkedin.com/in/jing-tang1996/</a></p>
-                <p id="github"><b>GitHub: </b><a  href="https://github.com/patricktang1996">github.com/patricktang1996</a></p>
-            </div>
-
+          <div class="Contact">
+            <h2>Contact</h2>
+            <p><b>Email: </b>tangjing1@myvuw.ac.nz</p>
+            <p id="linkedin">
+              <b>LinkedIn: </b
+              ><a href="https://www.linkedin.com/in/jing-tang1996/"
+                >www.linkedin.com/in/jing-tang1996/</a
+              >
+            </p>
+            <p id="github">
+              <b>GitHub: </b
+              ><a href="https://github.com/patricktang1996"
+                >github.com/patricktang1996</a
+              >
+            </p>
+          </div>
 
           <div class="Skills">
-          <h2>Skills</h2>
-              <ul>
-                  <li><b>Programming Languages: </b>Java, C#, HTML, CSS, JavaScript, Python, PHP </li>
-                  <li><b>Database: </b>SQL, MySQL</li>
-                  <li><b>Statistical Analysis: </b>STATA</li>
-                  <li><b>Version Control: </b>Git, GitHub</li>
-                  <li><b>Systems/Ops: </b>AWS, Linux, Windows</li>
-              </ul>
+            <h2>Skills</h2>
+            <ul>
+              <li>
+                <b>Programming Languages: </b>Java, C#, HTML, CSS, JavaScript,
+                Python, PHP
+              </li>
+              <li><b>Database: </b>SQL, MySQL</li>
+              <li><b>Statistical Analysis: </b>STATA</li>
+              <li><b>Version Control: </b>Git, GitHub</li>
+              <li><b>Systems/Ops: </b>AWS, Linux, Windows</li>
+            </ul>
           </div>
           <div class="Language">
-              <h2>Language</h2>
-              <ul>
-                  <li><b>Chinese</b> (native)</li>
-                  <li><b>English</b> (fluent)</li>
-                  <li><b>Japanese</b> (fluent)</li>
-                  <li><b>Cantonese</b> (intermediate)</li>
-                  <li><b>Korean</b> (basic)</li>
-              </ul>
+            <h2>Language</h2>
+            <ul>
+              <li><b>Chinese</b> (native)</li>
+              <li><b>English</b> (fluent)</li>
+              <li><b>Japanese</b> (fluent)</li>
+              <li><b>Cantonese</b> (intermediate)</li>
+              <li><b>Korean</b> (basic)</li>
+            </ul>
           </div>
           <div class="Hobbies">
-              <h2>Hobbies</h2>
-              <ul>
-                  <li>Hip-Hop Dance</li>
-                  <li>Hiking</li>
-                  <li>cooking</li>
-              </ul>
+            <h2>Hobbies</h2>
+            <ul>
+              <li>Hip-Hop Dance</li>
+              <li>Hiking</li>
+              <li>cooking</li>
+            </ul>
           </div>
+        </div>
+        <div class="right">
+          <div class="Summary">
+            <h2>Summary</h2>
+            <p>
+              I am currently pursuing a Master's degree in Software Development
+              at Victoria University of Wellington. I am skilled in programming
+              languages(Java, JavaScript, and so on), data structures, version
+              control, networking, databases, security, web systems, agile
+              development methodologies, design patterns, and more. At the same
+              time, I am also teaching myself about the cloud and have AWS Cloud
+              Practitioner certification.
+            </p>
+          </div>
+
+          <div class="Education">
+            <h2>Education</h2>
+            <div class="flex-box">
+              <div class="left-item">
+                <h4>Victoria University of Wellington</h4>
+              </div>
+              <div class="right-item"><h4>07/2023- 06/2024 (expected)</h4></div>
+            </div>
+            <p>Master of Software Development</p>
+
+            <div class="flex-box">
+              <div class="left-item">
+                <h4>Chinese University of Hong Kong</h4>
+              </div>
+              <div class="right-item"><h4>09/2018- 06/2019</h4></div>
+            </div>
+            <p>Master of Art in Chinese Studies</p>
+            <ul>
+              <li>Second Concentration: Issues of contemporary China</li>
+            </ul>
+            <div class="flex-box">
+              <div class="left-item">
+                <h4>Chinese University of Hong Kong</h4>
+              </div>
+              <div class="right-item"><h4>09/2014- 06/2018</h4></div>
+            </div>
+            <p>Bachelor of Social Science in Economics</p>
+            <ul>
+              <li>
+                Second Concentration: Financial Economics; Business Economics
+              </li>
+            </ul>
+          </div>
+
+          <div class="certification">
+            <h2>Licenses & certifications</h2>
+            <div class="flex-box">
+              <div class="left-item">
+                <h4>AWS Certified Cloud Practitioner</h4>
+              </div>
+              <div class="right-item"><h4>Amazon Web Services</h4></div>
+            </div>
+            <p>Issued Nov 2023 & Expires Nov 2026</p>
+            <div class="flex-box">
+              <div class="left-item">
+                <h4>Foundational C# with Microsoft</h4>
+              </div>
+              <div class="right-item"><h4>freeCodeCamp</h4></div>
+            </div>
+            <p>Issued Dec 2023</p>
+            <div class="flex-box">
+              <div class="left-item">
+                <h4>JavaScript Algorithms and Data</h4>
+              </div>
+              <div class="right-item"><h4>freeCodeCamp</h4></div>
+            </div>
+            <p>Issued Aug 2023</p>
+            <div class="flex-box">
+              <div class="left-item"><h4>Responsive Web Design</h4></div>
+              <div class="right-item"><h4>freeCodeCamp</h4></div>
+            </div>
+            <p>Issued Feb 2023</p>
+          </div>
+
+          <div class="project">
+            <h2>Project Experiences</h2>
+            <div class="flex-box">
+              <div class="left-item">
+                <h4>Personal Project: Pomodoro Timer</h4>
+              </div>
+              <div class="right-item"><h4>12/2023</h4></div>
+            </div>
+            <ul>
+              <li>
+                The Pomodoro timer Chrome extension optimizes time management by
+                dividing work into focused intervals with breaks, fostering
+                productivity. With a user-friendly interface and notifications,
+                it aims to create a flexible tool for efficient work routines
+                and improved concentration.
+              </li>
+            </ul>
+            <p>
+              <strong>Skills: </strong>JavaScript (Jest), HTML, CSS, Google
+              Chrome Extension API
+            </p>
+            <div class="flex-box">
+              <div class="left-item">
+                <h4>Team Project: SportMate</h4>
+              </div>
+              <div class="right-item"><h4>11/2023</h4></div>
+            </div>
+            <ul>
+              <li>
+                SportMate is a team management system which can organise sports
+                events, manage teams, and connect team members.
+              </li>
+            </ul>
+            <p><strong>Skills: </strong>PJavaFX, Scene Builder, Git, J-Unit</p>
+          </div>
+
+          <div class="experience">
+            <h2>Working Experience</h2>
+            <div class="flex-box">
+              <div class="left-item"><h4>HR Specialist</h4></div>
+              <div class="right-item"><h4>07/2020-04/2023</h4></div>
+            </div>
+            <p>
+              <em>GRG Metrology & Test Hunan Co., Ltd, Changsha, China </em>
+            </p>
+            <ul>
+              <li>
+                Scheduled meetings, maintained employee files, managed and
+                updated HR documents.
+              </li>
+              <li>
+                Maintained secure and accurate records of staff-related data
+                such as payroll, turnover rates, and leaves in the database to
+                ensure all employment requirements were met.
+              </li>
+              <li>
+                Managed interview scheduling for the in-house recruiting team:
+                confirmed availability of interviewers and interviewees, set up
+                meetings, secured meeting spaces.
+              </li>
+              <li>
+                Maintained comprehensive and accurate reports on various
+                activities such as employee training and career progression.
+              </li>
+            </ul>
+            <p><strong>Key achievements:</strong></p>
+            <ul>
+              <li>
+                Supervised the completion of job application materials
+                maintaining records for over 500 employees.
+              </li>
+              <li>
+                Successfully managed two internship programs comprising 220
+                interns and handled a budget of more than ¥2,000,000
+                incident-free.
+              </li>
+            </ul>
+            <div class="flex-box">
+              <div class="left-item"><h4>UMC / Store Manager</h4></div>
+              <div class="right-item"><h4>07/2019-06/2020</h4></div>
+            </div>
+            <p>
+              <em>Fast Retailing (China) Trading Co., Ltd, Guangzhou, China</em>
+            </p>
+            <ul>
+              <li>Maintained stable operation of the store.</li>
+              <li>
+                Explored the best plan to improve service level, improve work
+                efficiency and achieve higher performance in store operation.
+              </li>
+              <li>
+                Responsible for full-time staff recruitment, staff development
+                and work plan development.
+              </li>
+            </ul>
+            <p><strong>Key achievements:</strong></p>
+            <ul>
+              <li>Selected as the Top Ten UMC of 2019.</li>
+              <li>The promotion rate of store staff was 100%.</li>
+              <li>
+                Attended the Global Store Manager Conference in Japan as the
+                representative of China UMC.
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-  <div class="right">
-    <div class="Summary">
-      <h2>Summary</h2>
-      <p>I am currently pursuing a Master's degree in Software Development at Victoria University of Wellington.
-        I am skilled in programming languages(Java, JavaScript, and so on), data structures, version control, networking, databases, security, web systems, agile development methodologies, design patterns, and more.
-        At the same time, I am also teaching myself about the cloud and have AWS Cloud Practitioner certification.
-      </p>
-    </div>
-
-    <div class="Education">
-      <h2>Education</h2>
-      <div class="flex-box">
-        <div class="left-item"><h4>Victoria University of Wellington </h4></div>
-        <div class="right-item"><h4>07/2023- 06/2024 (expected)</h4></div> </div>
-      <p>Master of Software Development </p>
-
-      <div class="flex-box">
-        <div class="left-item"><h4>Chinese University of Hong Kong</h4></div>
-        <div class="right-item"><h4>09/2018- 06/2019</h4></div> </div>
-      <p>Master of Art in Chinese Studies</p>
-      <ul>
-        <li>Second Concentration: Issues of contemporary China</li>
-      </ul>
-      <div class="flex-box">
-        <div class="left-item"><h4>Chinese University of Hong Kong</h4></div>
-        <div class="right-item"><h4>09/2014- 06/2018</h4></div> </div>
-      <p>Bachelor of Social Science in Economics</p>
-      <ul>
-        <li> Second Concentration: Financial Economics; Business Economics </li>
-      </ul>
-    </div>
-
-    <div class="certification">
-      <h2>Licenses & certifications</h2>
-      <div class="flex-box">
-        <div class="left-item"><h4>AWS Certified Cloud Practitioner</h4></div>
-        <div class="right-item"><h4>Amazon Web Services</h4></div> </div>
-      <p>Issued Nov 2023 & Expires Nov 2026</p>
-      <div class="flex-box">
-        <div class="left-item"><h4>Foundational C# with Microsoft</h4></div>
-        <div class="right-item"><h4>freeCodeCamp</h4></div> </div>
-      <p>Issued Dec 2023</p>
-      <div class="flex-box">
-        <div class="left-item"><h4>JavaScript Algorithms and Data</h4></div>
-        <div class="right-item"><h4>freeCodeCamp</h4></div> </div>
-      <p>Issued Aug 2023</p>
-      <div class="flex-box">
-        <div class="left-item"><h4>Responsive Web Design</h4></div>
-        <div class="right-item"><h4>freeCodeCamp</h4></div> </div>
-      <p>Issued Feb 2023</p>
-    </div>
-
-    <div class="project">
-      <h2>Project Experiences</h2>
-      <div class="flex-box">
-        <div class="left-item"><h4>Human resources system website upgrade</h4></div>
-        <div class="right-item"><h4>07/2022-04/2023</h4></div> </div>
-      <ul>
-        <li>Participated in database construction and imported staff-related data of over 300 employees.</li>
-        <li>Participated in the operation test of attendance management, payroll management and other modules. </li>
-      </ul>
-      <p><strong>Skills: </strong>MySQL, manual testing</p>
-      <div class="flex-box">
-        <div class="left-item"><h4>Data visualization dashboard construction</h4></div>
-        <div class="right-item"><h4>04/2022</h4></div> </div>
-      <ul>
-        <li>Displayed the financial data, project completion, equipment scheduling and other information in one dashboard.</li>
-      </ul>
-      <p><strong>Skills: </strong>Python (with Matplotlib and PyEcharts)</p>
-    </div>
-
-    <div class="experience">
-        <h2>Working Experience</h2>
-        <div class="flex-box">
-            <div class="left-item"><h4>HR Specialist</h4></div>
-            <div class="right-item"><h4>07/2020-04/2023</h4></div> </div>
-        <p><em>GRG Metrology & Test Hunan Co., Ltd, Changsha, China </em></p>
-        <ul>
-            <li>Scheduled meetings, maintained employee files, managed and updated HR documents.</li>
-            <li>Maintained secure and accurate records of staff-related data such as payroll, turnover rates, and
-            leaves in the database to ensure all employment requirements were met.
-            </li>
-            <li>Managed interview scheduling for the in-house recruiting team: confirmed availability of
-            interviewers and interviewees, set up meetings, secured meeting spaces.</li>
-            <li>Maintained comprehensive and accurate reports on various activities such as employee training
-            and career progression.</li>
-        </ul>
-        <p><strong>Key achievements:</strong></p>
-        <ul>
-            <li>Supervised the completion of job application materials maintaining records for over 500 employees.</li>
-            <li>Successfully managed two internship programs comprising 220 interns and handled a budget of
-            more than ¥2,000,000 incident-free.</li>
-        </ul>
-        <div class="flex-box">
-            <div class="left-item"><h4>UMC / Store Manager</h4></div>
-            <div class="right-item"><h4>07/2019-06/2020</h4></div> </div>
-        <p><em>Fast Retailing (China) Trading Co., Ltd, Guangzhou, China</em></p>
-        <ul>
-            <li>Maintained stable operation of the store.</li>
-            <li> Explored the best plan to improve service level, improve work efficiency and achieve higher
-            performance in store operation.</li>
-            <li>Responsible for full-time staff recruitment, staff development and work plan development.</li>
-        </ul>
-        <p><strong>Key achievements:</strong></p>
-        <ul>
-            <li>Selected as the Top Ten UMC of 2019.</li>
-            <li>The promotion rate of store staff was 100%.</li>
-            <li>Attended the Global Store Manager Conference in Japan as the representative of China UMC.</li>
-        </ul>
-    </div>
-    </div>
-    </div>
-
-
     </section>
 
     <section class="footer">
-        <div class="box-container">
-            <div class="box">
-                <h3>quick links</h3>
-                <a href="index.html"><i class="fas fa-angle-right"></i> Home</a>
-                <a href="aboutPatricia.html"><i class="fas fa-angle-right"></i> About Me</a>
-                <a href="projects.html"><i class="fas fa-angle-right"></i> Projects</a>
-                <a href="blog.html"><i class="fas fa-angle-right"></i> Blog</a>
-            </div>
-
-            <div class="box">
-                <h3>follow me</h3>
-                <a href="https://github.com/patricktang1996"><i class="fab fa-github"></i> GitHub</a>
-                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
-                <a href="https://www.linkedin.com/in/jing-tang1996/"><i class="fab fa-linkedin"></i> LinkedIn</a>
-            </div>
-
-            <div class="box">
-                <h3>contact info</h3>
-                <a href="#"><i class="fas fa-envelope"></i> tangjing1@myvuw.ac.nz</a>
-                <a href="#"><i class="fas fa-envelope"></i> patricktang1996@gmail.com</a>
-                <a href="#"><i class="fas fa-map"></i> Wellington, New Zealand - 6011</a>
-            </div>
-
-
-
+      <div class="box-container">
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="index.html"><i class="fas fa-angle-right"></i> Home</a>
+          <a href="aboutPatricia.html"
+            ><i class="fas fa-angle-right"></i> About Me</a
+          >
+          <a href="projects.html"
+            ><i class="fas fa-angle-right"></i> Projects</a
+          >
+          <a href="blog.html"><i class="fas fa-angle-right"></i> Blog</a>
         </div>
-        <div class="credit"> created by<span> Patricia Tang</span></div>
 
+        <div class="box">
+          <h3>follow me</h3>
+          <a href="https://github.com/patricktang1996"
+            ><i class="fab fa-github"></i> GitHub</a
+          >
+          <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+          <a href="https://www.linkedin.com/in/jing-tang1996/"
+            ><i class="fab fa-linkedin"></i> LinkedIn</a
+          >
+        </div>
+
+        <div class="box">
+          <h3>contact info</h3>
+          <a href="#"><i class="fas fa-envelope"></i> tangjing1@myvuw.ac.nz</a>
+          <a href="#"
+            ><i class="fas fa-envelope"></i> patricktang1996@gmail.com</a
+          >
+          <a href="#"
+            ><i class="fas fa-map"></i> Wellington, New Zealand - 6011</a
+          >
+        </div>
+      </div>
+      <div class="credit">created by<span> Patricia Tang</span></div>
     </section>
-
-    
 
     <script src="js.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-</body>
+  </body>
 </html>
